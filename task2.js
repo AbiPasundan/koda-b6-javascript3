@@ -116,3 +116,97 @@
 // console.log(Math.PI);
 
 
+// 9. Math.max()
+// mencari angka yang paling banyak dan mereturnkannya
+// tapi jika angkanya tak terbatasakan mengemalikan Infinity
+// const array = [1, 3, 2];
+// console.log(Math.max(...array));
+
+// const infinity = 1 / 0
+// console.log(Math.max(infinity));
+
+// 10. Math.min()
+// mencari angka yang paling rendah dan mereturnkannya
+// tapi jika angkanya tak terbatasakan mengemalikan Infinity
+// const array = [2, 3, 1];
+// console.log(Math.min(...array));
+// const inf = 1 / 0
+// console.log(inf);
+
+// 11. reverse();
+// membalikan nilai array
+// const array = [2, 3, 1];
+// console.log(array.reverse) // [1, 3, 2]
+
+// 12. toSorted()
+// mengurutkan array jka isi array adalah string maka akan di urutkan berdasarkan alphabet jika number maka akan di urutkan berdasarkan nilai terkecail 
+// const months = ["Mar", "Jan", "Feb", "Dec"];
+// const sortedMonths = months.toSorted();
+// console.log(sortedMonths); // ['Dec', 'Feb', 'Jan', 'Mar']
+// console.log(months); // ['Mar', 'Jan', 'Feb', 'Dec']
+
+// const values = [1, 10, 21, 2];
+// const sortedValues = values.toSorted((a, b) => a - b);
+// console.log(sortedValues); // [1, 2, 10, 21]
+// console.log(values); // [1, 10, 21, 2]
+
+// 13. findLast()
+// menghitung array secara terbalik dan mengembalikan return yang kita tentukan dlam proses
+// const array = [5, 12, 50, 130, 44];
+// const found = array.findLast((element) => element > 45);
+// console.log(found);
+
+// 14. shift()
+// menghapus nilai pertama dari array dan mengembalikan nilai yang dihapus 
+// const array = [1, 2, 3];
+// const firstElement = array.shift();
+// console.log(array);
+// console.log(firstElement);
+
+// 15. create()
+// Membuat object berdasarkan object yang telah ada 
+// const person = {
+//   isHuman: false,
+//   printIntroduction() {
+//     console.log(`My name is ${this.name}. Am I human? ${this.isHuman}`);
+//   },
+// };
+// const me = Object.create(person);
+// me.name = "Matthew"
+// me.isHuman = true
+// me.printIntroduction();
+
+// 16. values()
+// membuat array berdasarkan value dari sebuah object
+// const object = {
+//   a: "some string",
+//   b: 42,
+//   c: false,
+// };
+// console.log(Object.values(object));
+
+// 17. map() 
+// me return an array baru berdasarkan array yang telah di proses oleh .map()
+// const array = [1, 4, 9, 16];
+// const mapped = array.map((x) => x * 2);
+// console.log(mapped);
+
+// 18. pop()
+// menghapus dan me returnkan array terakhir
+// const plants = ["broccoli", "cauliflower", "cabbage", "kale", "tomato"];
+// console.log(plants.pop());
+// console.log(plants);
+// plants.pop();
+// console.log(plants);
+
+// 19. .length
+// menghitung panjang dari sebuah array atau sebuah value yang bisa dihitung 
+// const clothing = ["shoes", "shirts", "socks", "sweaters"];
+// console.log(clothing.length);
+
+// 20. valueOf()
+// mengecek suatu value apakah true atau false dan me returnkan nilai value atau fals
+// const x = new Boolean();
+// console.log(x.valueOf());
+// const y = new Boolean("Mozilla");
+// console.log(y.valueOf());
