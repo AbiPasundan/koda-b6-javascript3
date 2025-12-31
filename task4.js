@@ -24,6 +24,13 @@ data = [
     },
 ]
 
+// let result = {};
+// for (let i = 0; i < data.length; i++) {
+//   result[data[i].nama] = data[i].wait
+// }
+
+// console.log(result);
+
 let nama = []
 let wait = []
 
@@ -34,17 +41,23 @@ for (let i = 0; i < data.length; i++) {
 
 
 for (let j = 0; j < wait.length; j++) {
-    
-    
-    // console.log(nama[j])
 
 
-    setTimeout(() => {
+    function antri(time) {
         if (wait[j]) {
-            console.log("menunggu antrian");
-            
+            // console.log("menunggu antrian");
         }
-        console.log(`${nama[j]} pesanan kamu selesai dalam ${wait[j]}`);
-        
-    }, wait[j]);
+
+
+        setTimeout(() => {
+            if (wait[j]) {
+                console.log("menunggu antrian");
+            }
+            console.log(`${nama[j]} pesanan kamu selesai dalam ${wait[j]}`);
+        }, time);
+    }
+
+    
+    antri(data.length)
 }
+
