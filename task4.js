@@ -40,6 +40,10 @@ for (let j = 0; j < wait.length; j++) {
 
 
     setTimeout(() => {
+        if (wait[j]) {
+            console.log("menunggu antrian");
+            
+        }
         console.log(`${nama[j]} pesanan kamu selesai dalam ${wait[j]}`);
         
     }, wait[j]);
