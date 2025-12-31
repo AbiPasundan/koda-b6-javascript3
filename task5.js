@@ -73,10 +73,8 @@ const processAsync = (n) => {
 
 const antri = n => {
     return new Promise((res, rej) => {
-        let nama = []
-        let wait = []
 
-        data.forEach(element => {
+        n.forEach(element => {
             // console.log(element.nama);
             if (element !== "string") {
                 rej()
@@ -101,4 +99,4 @@ antri(data).then(() => {
         console.log(`${nama[i]} beres dengan waktu ${wait[i]}`);
     }
     console.log("eres");
-})    
+})
