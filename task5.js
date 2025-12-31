@@ -81,10 +81,6 @@ const antri = n => {
             if (element !== "string") {
                 rej()
             } else {
-                setTimeout(() => {
-                    console.log(`${element.nama} selesai dalam waktu ${element.wait}`);
-                }, element.wait)
-
                 clearInterval()
                 res()
         }
@@ -106,4 +102,3 @@ antri(data).then(() => {
     }
     console.log("eres");
 })    
-
